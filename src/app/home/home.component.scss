@@ -1,0 +1,64 @@
+.introduction {
+    color: white;
+    background: rgb(252, 191, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(252, 191, 0, 1) 0%,
+        rgba(246, 145, 6, 1) 35%,
+        rgba(246, 80, 6, 1) 100%
+    );
+}
+
+.andrea-info {
+    .andrea-photo,
+    .info {
+        flex: 1;
+
+        .name {
+            color: #f69106;
+        }
+    }
+
+    .andrea-photo {
+        img {
+            position: relative;
+            transition: transform 0.3s ease;
+            transform: translateX(0px);
+
+            &:hover {
+                transform: translateX(10px);
+            }
+        }
+    }
+}
+
+.contacts {
+    color: white;
+    background-color: #f75003;
+
+    .buttons {
+        .btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 14em;
+            padding: 3rem;
+            box-shadow: 3px 3px 5px #323336;
+
+            img:not(.email) {
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+.benefits {
+    .list {
+        padding: 30px;
+
+        ul {
+            column-count: 2;
+            list-style-type: none;
+        }
+    }
+}
