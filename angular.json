@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "andrea-portela-comp": {
+        "andrea-portela-cadastro": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/andrea-portela-comp",
+                        "outputPath": "dist/andrea-portela-cadastro",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -61,10 +61,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "andrea-portela-comp:build:production"
+                            "browserTarget": "andrea-portela-cadastro:build:production"
                         },
                         "development": {
-                            "browserTarget": "andrea-portela-comp:build:development"
+                            "browserTarget": "andrea-portela-cadastro:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "andrea-portela-comp:build"
+                        "browserTarget": "andrea-portela-cadastro:build"
                     }
                 },
                 "test": {
